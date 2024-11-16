@@ -1,16 +1,16 @@
 document.getElementById('attendance-form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    event.preventDefault(); // 防止表單提交
     var name = document.getElementById('name').value;
     var date = document.getElementById('date').value;
     var time = document.getElementById('time').value;
 
-    // 檢查是否已經存在簽到記錄
+    // 創建新的列表項
     var listItem = document.createElement('li');
     listItem.textContent = 姓名: ${name}, 日期: ${date}, 時間: ${time};
 
-    // 將簽到記錄添加到列表
+    // 將新列表項添加到簽到記錄列表
     document.getElementById('list').appendChild(listItem);
 
-    // 清空表單字段
+    // 重置表單字段
     document.getElementById('attendance-form').reset();
 });
