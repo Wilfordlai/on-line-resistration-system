@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+</head>
+<body>
+    <h1>簽到系統</h1>
+    <form id="attendance-form">
+        <label for="name">姓名：</label>
+        <input type="text" id="name" name="name" required>
+        <label for="date">日期：</label>
+        <input type="date" id="date" name="date" required>
+        <label for="time">時間：</label>
+        <input type="time" id="time" name="time" required>
+        <button type="submit">提交</button>
+    </form>
+    <div id="attendance-list">
+        <h2>簽到記錄</h2>
+        <ul id="list"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
